@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #20201c;
+    color: #ffffff;
+    
+    font-size: 16px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 100vh;
+    width: 100vw;
+}
+
+.left {
+    /* background-color: bisque; */
+    height: 100vh;
+    width: 50%;
+    /* border: yellow solid 2px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left .logo {
+    margin-top: 15%;
+    background-color: #000000;
+    height: 30px;
+    width: 100%;
+}
+
+.left .logo img {
+    width: 140px;
+    border-radius: 10px;
+}
+
+.left main {
+    background-color: #000000;
+    border-radius: 30px;
+    width: 60%;
+    height: 60%;
+    margin-top: 20%;
+    padding: 20px;
+}
+
+.left main form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #ffea00;
+    text-align: center;
+}
+
+hr {
+    border: #ffea00 solid 1px;
+}
+
+.input {
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    height: 25%;
+}
+
+.input label {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffea00;
+}
+
+.input input[type="text"],
+.input input[type="password"] {
+    border: #ffea00 solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 18%;
+}
+
+.input input[type="password"]:focus {
+    outline: #ffea00 solid 2px;
+}
+
+.input input[type="password"]::after {
+    outline: none;
+}
+
+.input input[type="text"]:focus {
+    outline: #ffea00 solid 2px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #ffea00;
+}
+
+.forgot-password a:hover {
+    font-size: 1.01rem;
+    cursor: pointer;
+    transition: font-size 0.3s;
+    padding-left: 2px;
+    font-weight: bold;
+}
+
+button {
+    margin-left: 40%;
+    background-color: #ffea00;
+    border: none;
+    border-radius: 15px;
+    padding: 1%;
+    width: 20%;
+    height: 9%;
+    color: #20201c;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 4%;
+}
+
+/* .right {
+    padding: 20px;
+    position: relative;
+} */
+
+.right {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+}
+
+.slideshow-container {
+    /* position: center; */
+    width: 100%;
+    /* margin: auto; */
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container img {
+    vertical-align:auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* Effet de fondu */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

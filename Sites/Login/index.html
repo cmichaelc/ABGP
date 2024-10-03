@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ABGP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="left">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../../LOGO ABGP CROPED.jpg" alt=" logo">
+                </a>
+            </div>
+            <div class="menu">
+                <!--  -->
+            </div>
+        </header>
+        <main>
+            <form action="get"></form>
+                <h1>Login Here</h1>
+                <hr>
+                <div class="input">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password ?</a>
+                </div>
+                <button type="submit">Log in</button>
+            </form>
+        </main>
+    </section>
+    <section class="right">
+        <section class="slideshow-container">
+
+            <!-- Slide 1 -->
+            <div class="mySlides fade">
+                <img src="../../image (1).png" style="width:100%">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides fade">
+                <img src="../../image.png" style="width:100%">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides fade">
+                <img src="../../construction.png" style="width:100%">
+            </div>
+        </section>
+    </section>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change l'image toutes les 3 secondes
+        }
+    </script>
+</body>
+</html>
